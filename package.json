@@ -1,6 +1,6 @@
 {
   "name": "Midas",
-  "version": "1",
+  "version": "1.0.0",
   "description": "Midas template based on Webpack-Sass-Bootstrap Boilerplate (Shamin Meerankutty)",
   "main": "index.js",
   "scripts": {
@@ -36,6 +36,7 @@
   "dependencies": {
     "bootstrap": "^4.1.3",
     "jquery": "^3.3.1",
+    "owl.carousel": "^2.3.4",
     "popper.js": "^1.14.6"
   }
 }

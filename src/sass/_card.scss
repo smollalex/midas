@@ -1,0 +1,157 @@
+.card {
+  &-categories {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 30px;
+
+    img {
+      height: auto;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      font: 16px/1.25 "Gotham Bold";
+    }
+    h4 {
+      font: 18px/1.25 "Gotham Book";
+    }
+    h5 {
+      font: 12px/1.25 "Gotham Book";
+    }
+  }
+
+  &-join {
+    border: none;
+    width: 100%;
+    margin: auto;
+    background-color: #f5f6f8;
+    text-align: center;
+
+    .card {
+      &-header {
+        padding: 0;
+        position: relative;
+        background: none;
+        border: none;
+
+        img {
+          width: 100%;
+        }
+      }
+      &-body {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+    .btn {
+      margin-top: -30px;
+    }
+    .tournament {
+      font: 18px/1.25 "Gotham Bold";
+      text-transform: uppercase;
+    }
+    .name {
+      font: 38px/1.25 "Gotham Book";
+      margin-bottom: 20px;
+    }
+    .location {
+      font: 12px/1.25 "Gotham Book";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      svg {
+        width: 10px;
+        height: 10px;
+        fill: #979797;
+        margin-right: 4px;
+      }
+    }
+    .date {
+      font: 10px/1.25 "Gotham Book";
+      color: #818181;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        width: 10px;
+        height: 10px;
+        fill: #979797;
+        margin-right: 4px;
+      }
+    }
+
+    .count {
+      position: relative;
+      height: 50px;
+      background-color: #ddf7f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      span {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        position: absolute;
+        right: -15px;
+        background-color: #fff;
+        font: 24px/1.25 "Gotham Ultra";
+        border: 2px solid #d0eae7;
+      }
+    }
+  }
+
+  &-trend {
+    border: 3px solid #d9d9db;
+
+    &--liked {
+      border-color: #027AFF;
+    }
+    .card {
+      &-header {
+        padding: 30px 20px 20px 20px;
+        position: relative;
+        background: #f5f6f8;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font: 12px/1.25 "Gotham Book";
+        
+        button {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          border: none;
+          background: none;
+          width: 25px;
+          height: 25px;
+          padding: 0;
+        }
+
+        > img {
+          width: 70%;
+        }
+      }
+      &-body {
+        display: flex;
+        flex-direction: column;
+
+        .category {
+          color: #c4c3c3;
+        }
+      }
+    }
+  }
+}

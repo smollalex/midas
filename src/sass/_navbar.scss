@@ -1,0 +1,72 @@
+.navbar {
+  &-top {
+    padding: 0;
+    background-color: #121212;
+
+    .navbar-nav {
+      flex-direction: row;
+      align-items: center;
+      margin-left: auto;
+      height: 40px;
+
+      .nav {
+        &-item {
+          padding: 0 15px;
+          border-right: 1px solid #fff;
+          height: 25px;
+          display: flex;
+          align-items: center;
+
+          &:last-child {
+            border: none;
+          }
+        }
+        &-link {
+          color: #fff;
+          font: 16px/1 'Gotham Book';
+        }
+      }
+    }
+  }
+  &-middle {
+    padding: 0;
+
+    .form {
+      flex: 1 0 0;
+      max-width: 60%;
+
+      .input-group {
+        &-prepend {
+        }
+        &-append {
+        }
+        &-text {
+          background-color: #fff;
+        }
+        input {
+          border-left: 0;
+          border-right: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+  &-bottom {
+    background-color: #f5f5f5;
+    padding: 0;
+    
+    .navbar-nav {
+        margin-left: -1.5rem;
+    }
+
+    .nav {
+      &-link {
+        font: 14px/1 "Gotham Bold";
+        
+        @include media-breakpoint-up(lg) {
+          padding: 1.5rem !important;
+        }
+      }
+    }
+  }
+}
