@@ -106,6 +106,8 @@
       align-items: center;
       justify-content: center;
       overflow: hidden;
+      color: #818181;
+    font-size: .8rem;
 
       span {
         width: 80px;
@@ -126,9 +128,10 @@
   &-trend {
     border: 3px solid #d9d9db;
 
-    &--liked {
+    &:hover, &:focus {
       border-color: #027AFF;
     }
+
     .card {
       &-header {
         padding: 30px 20px 20px 20px;
@@ -163,6 +166,7 @@
           color: #c4c3c3;
         }
       }
+     
     }
   }
 }

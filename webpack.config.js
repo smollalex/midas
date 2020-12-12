@@ -1,12 +1,14 @@
+const webpack = require("webpack");
+const path = require("path");
+const globSync = require("glob").sync;
+
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CompressionPlugin = require('compression-webpack-plugin');
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const webpack = require("webpack");
-const path = require("path");
-const globSync = require("glob").sync;
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = (env, options) => ({
   entry: ["./src/index.js"],
@@ -74,9 +76,10 @@ module.exports = (env, options) => ({
         use: {
           loader: "html-srcsets-loader",
           options: {
-            attrs: [":src", ':srcset']
+            attrs: [":src", ':srcset'],
           }
-        }
+        },
+        
       },
       {
         test: /\.js$/,
@@ -91,6 +94,7 @@ module.exports = (env, options) => ({
     ]
   },
   plugins: [
+
     new MiniCssExtractPlugin({
       filename: "css/[name].[contenthash].css"
     }),
@@ -109,7 +113,8 @@ module.exports = (env, options) => ({
       Popper: ["popper.js", "default"],
       Util: "exports-loader?Util!bootstrap/js/dist/util",
       Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown"
-    })
+    }),
+    
   ],
   optimization: {
     minimizer: [

@@ -7,13 +7,13 @@
       flex-direction: row;
       align-items: center;
       margin-left: auto;
-      height: 40px;
+      height: 30px;
 
       .nav {
         &-item {
           padding: 0 15px;
           border-right: 1px solid #fff;
-          height: 25px;
+          height: 20px;
           display: flex;
           align-items: center;
 
@@ -23,7 +23,7 @@
         }
         &-link {
           color: #fff;
-          font: 16px/1 'Gotham Book';
+          font: 12px/1 'Gotham Book';
         }
       }
     }

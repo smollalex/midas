@@ -25,6 +25,13 @@
           position: absolute;
           bottom: 30px;
         }
+        &-dot {
+          background-color: #a9a9a9 !important;
+          outline: none;
+          &.active {
+            background-color:#4effec !important
+          }
+        }
         &-nav {
           width: 100%;
           position: absolute;
@@ -45,15 +52,14 @@
         &-prev {
           position: absolute;
           left: 50px;
-          img {
+          svg {
             margin-left: 5px;
           }
         }
-
         &-next {
           position: absolute;
           right: 50px;
-          img {
+          svg {
             margin-right: 5px;
           }
         }
@@ -63,11 +69,16 @@
       max-width: 80%;
       margin: auto;
       
-      .owl-prev {
-        left: -100px;
-      }
-      .owl-next {
-        right: -100px;
+      .owl {
+        &-dots {
+          bottom: -50px;
+        }
+        &-prev {
+          left: -100px;
+        }
+        &-next {
+          right: -100px;
+        }
       }
     }
   }
