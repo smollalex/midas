@@ -1,8 +1,7 @@
-@import "~bootstrap/scss/bootstrap"; // <- in this file need change path for variables to "../../../src/sass/variables";
-
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
-
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
 @import "fonts";
+
+@import "bootstrap";
 
 @import "navbar";
 @import "home";
@@ -10,7 +9,12 @@
 @import "card";
 @import "footer";
 
-.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
   width: 90%;
 }
 
