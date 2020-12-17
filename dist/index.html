@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello World</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    
+  <link href="css/main.d3b0f352478e79ac0daf.css" rel="stylesheet"></head>
+  <body>
+    <header>
+      <nav class="navbar navbar-top">
+          <div class="container-fluid">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Buylist </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> About Us </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Events </a>
+                </li>
+              </ul>
+          </div>
+      </nav>
+      <nav class="navbar navbar-middle">
+        <div class="container-fluid py-3">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.svg" alt="">
+            
+          </a>
+          
+          <form class="form">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                      <img src="images/search.svg">
+                      
+                  </span>
+                </div>
+                <input type="search" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Search"
+                aria-label="Search">
+                <div class="input-group-append">
+                  <span class="input-group-text">Advance search</span>
+                </div>
+              </div>
+          </form>
+
+          <div class="d-flex flex-row">
+            <div class="mr-4">
+              <button
+                class="btn btn-primary my-2 my-sm-0"
+                type="submit"
+              >
+                Sign In
+              </button>
+              <img src="images/profile.svg" alt="" class="mx-3">
+              
+            </div>
+            <div>
+                <button
+                class="btn btn-primary my-2 my-sm-0"
+                type="submit"
+                >
+                Cart
+                </button>
+                <img src="images/cart.svg" alt="" class="mx-3">
+                
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-bottom navbar-expand-lg">
+        <div class="container-fluid">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Magic
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Yu-Gi-Oh!
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                  </div>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Pokemon
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                  </div>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Cardfigth
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                  </div>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Dragon Ball Super
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                  </div>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Asseccories
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </header>
+    <section class="hero">
+        <div id="main-slider" class="owl-carousel owl-theme-main">
+            <div class="hero-item" >
+                <div class="container-fluid">
+                    <div class="hero-item-text">
+                        <span>Magic the Gathering</span>
+                        <h2>Ikoria: Lair of Behemoths</h2>
+                        <button type="button" class="btn btn-primary">Preorder Now</button>
+                    </div>
+                </div>
+                <img class="hero-item-img" src="images/slider.png"/>
+            </div>
+            <div class="hero-item" >
+                <div class="container-fluid">
+                    <div class="hero-item-text">
+                        <span>Magic the Gathering</span>
+                        <h2>Ikoria: Lair of Behemoths</h2>
+                        <button type="button" class="btn btn-primary">Preorder Now</button>
+                    </div>
+                </div>
+                <img class="hero-item-img" src="images/slider.png"/>
+            </div>
+            <div class="hero-item" >
+                <div class="container-fluid">
+                    <div class="hero-item-text">
+                        <span>Magic the Gathering</span>
+                        <h2>Ikoria: Lair of Behemoths</h2>
+                    </div>
+                    <button type="button" class="btn btn-primary">Preorder Now</button>
+                </div>
+                <img class="hero-item-img" src="images/slider.png"/>
+            </div>
+        </div>
+    </section>
+    <section class="ordes">
+        <div class="container-fluid text-center py-5">
+            <h2>Get FREEE Shipping on ordes over $100</h2>
+            <span>*us only</span>
+            <p>Probabo, inquit, modo ista sis aequitate, quam interrogare aut perferendis doloribus asperiores repellat hanc ego assentior, cum memoriter, tum etiam ac ratione et harum quidem rerum necessitatibus saepe eveniet, ut calere ignem, nivem esse ratione et dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit.</p>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-primary mx-3">Preorder Now</button>
+                <button type="button" class="btn btn-primary mx-3">Preorder Now</button>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="categories">
+        <div class="container-fluid">
+            <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Shop Featured Categories
+                <img src="images/arrow-down.svg" />
+            </a>
+            <div class="collapse" id="collapseExample">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card card-categories mb-3">
+                            <img src="images/category1.png" alt="">
+                            <h3>Challenger Decks 2020</h3>
+                            <h4>Magic: the Gathering</h4>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card card-categories mb-3">
+                            <img src="images/category2.png" alt="">
+                            <h3>V-EB13: The Astral Force</h3>
+                            <h4>Cardfight!! Vanguard</h4>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card card-categories mb-3">
+                            <img src="images/category3.png" alt="">
+                            <h3>Pop! Vinyl</h3>
+                            <h4>Funko Pop! Vinyl</h4>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card card-categories mb-3">
+                            <img src="images/category4.png" alt="">
+                            <h3>JoJo's Bizarre Advendure: Golden Wind</h3>
+                            <h4>Weiss Schwarz</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card card card-categories mb-3">
+                                    <img src="images/category4.png" alt="">
+                                    <h5>Magic the Gathering</h5>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card card card-categories mb-3">
+                                    <img src="images/category4.png" alt="">
+                                    <h5>Magic the Gathering</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card card card-categories mb-3">
+                                    <img src="images/category4.png" alt="">
+                                    <h5>Magic the Gathering</h5>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card card card-categories mb-3">
+                                    <img src="images/category4.png" alt="">
+                                    <h5>Magic the Gathering</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card card card-categories mb-3">
+                                    <img src="images/category4.png" alt="">
+                                    <h5>Magic the Gathering</h5>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card card card-categories mb-3">
+                                    <img src="images/category4.png" alt="">
+                                    <h5>Magic the Gathering</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card card card-categories mb-3">
+                                    <img src="images/category4.png" alt="">
+                                    
+                                    <h5>Magic the Gathering</h5>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card card card-categories mb-3">
+                                    <img src="images/category4.png" alt="">
+                                    
+                                    <h5>Magic the Gathering</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        
+    </section>
+    <section class="join">
+        <div class="container-fluid py-5">
+            <div class="text-center mb-5 w-50 m-auto">
+                <h2>Join in the community</h2>
+                <p>Probabo, inquit, modo ista sis aequitate, quam interrogare aut perferendis doloribus asperiores repellat hanc ego assentior, cum memoriter, tum etiam ac ratione et harum quidem rerum necessitatibus saepe eveniet, ut calere ignem, nivem esse ratione et dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit.</p>
+            </div>
+            <div class="row mt-5">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card card-join">
+                                <div class="card-header">
+                                    <img src="images/event.svg" alt="">
+                                    
+                                    <button type="button" class="btn btn-primary">Join</button>
+                                </div>
+                                <div class="card-body">
+
+                                    <span class="tournament">Tournament</span>
+                                    <span class="name">Event Name</span>
+                                    <span class="location">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,0C161.896,0,85.333,76.563,85.333,170.667c0,28.25,7.063,56.26,20.49,81.104L246.667,506.5 c1.875,3.396,5.448,5.5,9.333,5.5s7.458-2.104,9.333-5.5l140.896-254.813c13.375-24.76,20.438-52.771,20.438-81.021 C426.667,76.563,350.104,0,256,0z M256,256c-47.052,0-85.333-38.281-85.333-85.333c0-47.052,38.281-85.333,85.333-85.333 s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z"/></svg>
+
+                                        3895 Cherokee St NW Unit 610 Kennesaw, GA 30144
+                                    </span>
+                                    <span class="date">
+                                        <svg  viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm121.75 388.414062c-4.160156 4.160157-9.621094 6.253907-15.082031 6.253907-5.460938 0-10.925781-2.09375-15.082031-6.253907l-106.667969-106.664062c-4.011719-3.988281-6.25-9.410156-6.25-15.082031v-138.667969c0-11.796875 9.554687-21.332031 21.332031-21.332031s21.332031 9.535156 21.332031 21.332031v129.835938l100.417969 100.414062c8.339844 8.34375 8.339844 21.824219 0 30.164062zm0 0"/></svg>
+                                       03-28-2020 - 04-10-2020
+                                    </span>
+                                </div>
+                                <div class="count">
+                                    Attending Members
+                                    <span>21</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card card-join">
+                                <div class="card-header">
+                                    <img src="images/event.svg" alt="">
+                                    
+                                    <button type="button" class="btn btn-primary">Join</button>
+                                </div>
+                                <div class="card-body">
+                                    <span class="tournament">Tournament</span>
+                                    <span class="name">Event Name</span>
+                                    <span class="location">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,0C161.896,0,85.333,76.563,85.333,170.667c0,28.25,7.063,56.26,20.49,81.104L246.667,506.5 c1.875,3.396,5.448,5.5,9.333,5.5s7.458-2.104,9.333-5.5l140.896-254.813c13.375-24.76,20.438-52.771,20.438-81.021 C426.667,76.563,350.104,0,256,0z M256,256c-47.052,0-85.333-38.281-85.333-85.333c0-47.052,38.281-85.333,85.333-85.333 s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z"/></svg>
+
+                                        3895 Cherokee St NW Unit 610 Kennesaw, GA 30144
+                                    </span>
+                                    <span class="date">
+                                        <svg  viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm121.75 388.414062c-4.160156 4.160157-9.621094 6.253907-15.082031 6.253907-5.460938 0-10.925781-2.09375-15.082031-6.253907l-106.667969-106.664062c-4.011719-3.988281-6.25-9.410156-6.25-15.082031v-138.667969c0-11.796875 9.554687-21.332031 21.332031-21.332031s21.332031 9.535156 21.332031 21.332031v129.835938l100.417969 100.414062c8.339844 8.34375 8.339844 21.824219 0 30.164062zm0 0"/></svg>
+                                       03-28-2020 - 04-10-2020
+                                    </span>
+                                </div>
+                                <div class="count">
+                                    Attending Members
+                                    <span>21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 pl-5">
+                    <h3>Torquatos nostros? quos tu paulo</h3>
+                    <p>Torquatos nostros? quos tu paulo ante cum soluta nobis est laborum et dolore suo sanciret militaris imperii disciplinam exercitumque in culpa, qui dolorem aspernari ut ratione et expedita distinctio nam libero tempore, cum a philosophis compluribus permulta dicantur, cur nec voluptas nulla pariatur? at magnum.
+                        Si sine causa? quae fuerit causa, nollem me tamen laudandis maioribus meis corrupisti nec me tamen laudandis maioribus meis corrupisti nec segniorem ad id est et inter mediocrem animadversionem atque natum sit, a sapiente delectus, ut aut in animis nostris inesse notionem, ut enim inter.
+                        Torquem detraxit hosti et quidem rerum facilis est cur verear, ne ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut summum malum dolorem, idque instituit docere sic: omne animal, simul atque insitam in armatum hostem impetum fecisse aut quid et caritatem, quae.</p>
+                    <button type="button" class="btn btn-primary">Join</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trends">
+        <div class="container-fluid">
+            <div class="text-center mb-5">
+                
+                <h2 class="">What's Trending</h2>
+            </div>
+            <div id="trends-slider" class="owl-carousel owl-theme-main owl-theme-trends">
+                <div class="card card-trend">
+                    <div class="card-header">
+                        <button type="button">
+                            <img src="images/heart.svg">
+                        </button>
+                        <img src="images/card1.svg" alt="">
+                        
+                    </div>
+                    <div class="card-body">
+                        <span class="category">Magic The Gathering</span>
+                        <span class="mb-3">Archetype of Imagination</span>
+                        <span class="price">$5.10</span>
+                    </div>
+                </div>
+                <div class="card card-trend">
+                    <div class="card-header">
+                        <button type="button" >
+                            <img src="images/heart.svg">
+                            
+                        </button>
+                        <img src="images/card2.svg" alt="">
+                        
+                    </div>
+                    <div class="card-body">
+                        <span class="category">Magic The Gathering</span>
+                        <span class="mb-3">Recruiter of the Guard</span>
+                        <span class="price">$5.10</span>
+                    </div>
+                </div>
+                <div class="card card-trend">
+                    <div class="card-header">
+                        <button type="button" >
+                            <img src="images/heart.svg">
+                            
+                        </button>
+                        <img src="images/card3.svg" alt="">
+                        
+                    </div>
+                    <div class="card-body">
+                        <span class="category">Magic The Gathering</span>
+                        <span class="mb-3">Memnarch</span>
+                        <span class="price">$5.10</span>
+                    </div>
+                </div>
+                <div class="card card-trend card-trend--liked">
+                    <div class="card-header">
+                        <button type="button" >
+                            <img src="images/heart2.svg">
+                        </button>
+                        <img src="images/card4.svg" alt="">
+                        
+                    </div>
+                    <div class="card-body">
+                        <span class="category">Magic The Gathering</span>
+                        <span class="mb-3">Sephara, Sky’s Blade</span>
+                        <span class="price">$5.10</span>
+                    </div>
+                </div>
+                <div class="card card-trend card-trend--liked">
+                    <div class="card-header">
+                        <button type="button" >
+                            <img src="images/heart2.svg">
+                            
+                        </button>
+                        <img src="images/card1.svg" alt="">
+                        
+                    </div>
+                    <div class="card-body">
+                        <span class="category">Magic The Gathering</span>
+                        <span class="mb-3">Sephara, Sky’s Blade</span>
+                        <span class="price">$5.10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="store-location">
+        <div class="container-fluid">
+            <div class="text-center w-50 m-auto">
+                <h2>Store Location</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates delectus mollitia quasi tempore, aliquid aperiam alias, harum temporibus provident et eaque excepturi pariatur quisquam sed vel architecto officiis quos dolor?</p>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+                <div class="store-location-box">
+                    <div class="item">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,0C161.896,0,85.333,76.563,85.333,170.667c0,28.25,7.063,56.26,20.49,81.104L246.667,506.5 c1.875,3.396,5.448,5.5,9.333,5.5s7.458-2.104,9.333-5.5l140.896-254.813c13.375-24.76,20.438-52.771,20.438-81.021 C426.667,76.563,350.104,0,256,0z M256,256c-47.052,0-85.333-38.281-85.333-85.333c0-47.052,38.281-85.333,85.333-85.333 s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z"/></svg>
+                        <span>
+                            3895 Cherokee St NW Unit 610 Kennesaw, GA 30144
+                        </span>
+                    </div>
+                    <div class="item">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 405.333 405.333" style="enable-background:new 0 0 405.333 405.333;" xml:space="preserve"><path d="M373.333,266.88c-25.003,0-49.493-3.904-72.704-11.563c-11.328-3.904-24.192-0.896-31.637,6.699l-46.016,34.752 c-52.8-28.181-86.592-61.952-114.389-114.368l33.813-44.928c8.512-8.512,11.563-20.971,7.915-32.64 C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32 c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z"/></svg>
+                        <span>
+                            (678) 401-7557
+                        </span>
+                    </div>
+                    <div class="item">
+                        <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><polygon points="339.392,258.624 512,367.744 512,144.896"/></g><g><polygon points="0,144.896 0,367.744 172.608,258.624"/></g><g><path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"/></g><g><path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856 L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"/></g></svg>
+                        <span>
+                            support@winconditiongames.com
+                        </span>
+                    </div>
+                    <div class="item">
+                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm121.75 388.414062c-4.160156 4.160157-9.621094 6.253907-15.082031 6.253907-5.460938 0-10.925781-2.09375-15.082031-6.253907l-106.667969-106.664062c-4.011719-3.988281-6.25-9.410156-6.25-15.082031v-138.667969c0-11.796875 9.554687-21.332031 21.332031-21.332031s21.332031 9.535156 21.332031 21.332031v129.835938l100.417969 100.414062c8.339844 8.34375 8.339844 21.824219 0 30.164062zm0 0"/></svg>
+                        <span>
+                            12pm-12am everyday
+                        </span>
+                    </div>
+                </div>
+                <div class="store-location-box">
+                    <div class="item">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,0C161.896,0,85.333,76.563,85.333,170.667c0,28.25,7.063,56.26,20.49,81.104L246.667,506.5 c1.875,3.396,5.448,5.5,9.333,5.5s7.458-2.104,9.333-5.5l140.896-254.813c13.375-24.76,20.438-52.771,20.438-81.021 C426.667,76.563,350.104,0,256,0z M256,256c-47.052,0-85.333-38.281-85.333-85.333c0-47.052,38.281-85.333,85.333-85.333 s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z"/></svg>
+                        <span>
+                            3895 Cherokee St NW Unit 610 Kennesaw, GA 30144
+                        </span>
+                    </div>
+                    <div class="item">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 405.333 405.333" style="enable-background:new 0 0 405.333 405.333;" xml:space="preserve"><path d="M373.333,266.88c-25.003,0-49.493-3.904-72.704-11.563c-11.328-3.904-24.192-0.896-31.637,6.699l-46.016,34.752 c-52.8-28.181-86.592-61.952-114.389-114.368l33.813-44.928c8.512-8.512,11.563-20.971,7.915-32.64 C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32 c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z"/></svg>
+                        <span>
+                            (678) 401-7557
+                        </span>
+                    </div>
+                    <div class="item">
+                        <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><polygon points="339.392,258.624 512,367.744 512,144.896"/></g><g><polygon points="0,144.896 0,367.744 172.608,258.624"/></g><g><path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"/></g><g><path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856 L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"/></g></svg>
+                        <span>
+                            support@winconditiongames.com
+                        </span>
+                    </div>
+                    <div class="item">
+                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm121.75 388.414062c-4.160156 4.160157-9.621094 6.253907-15.082031 6.253907-5.460938 0-10.925781-2.09375-15.082031-6.253907l-106.667969-106.664062c-4.011719-3.988281-6.25-9.410156-6.25-15.082031v-138.667969c0-11.796875 9.554687-21.332031 21.332031-21.332031s21.332031 9.535156 21.332031 21.332031v129.835938l100.417969 100.414062c8.339844 8.34375 8.339844 21.824219 0 30.164062zm0 0"/></svg>
+                        <span>
+                            12pm-12am everyday
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-center">
+                <h2>Stay in the know  with midas gamestore</h2>
+                <button type="button" class="btn btn-primary btn-lg">Join</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <section class="footer-nav">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3">
+                        <span class="title">Navigation</span>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Buylist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Contest</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Adv search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Deckbuiorder</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <span class="title">Information</span>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Buylist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Contest</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Adv search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Deckbuiorder</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <span class="title">My account</span>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Buylist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Contest</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Adv search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Deckbuiorder</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <span class="title">Store information</span>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Buylist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Contest</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Adv search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Deckbuiorder</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-rights">
+            Copyright 2020 Win Condition Games, App Right Reserved
+            <a class="mt-4" href="#">
+                <img src="images/logo.svg" alt="">
+                
+              </a>
+        </section>
+    </footer>
+  <script type="text/javascript" src="main.js"></script></body>
+</html>
