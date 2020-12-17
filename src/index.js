@@ -6,7 +6,6 @@ import "owl.carousel";
 import "./sass/main.scss";
 
 
-
 $(document).ready(function () {
   $("#main-slider").owlCarousel({
     loop: false,

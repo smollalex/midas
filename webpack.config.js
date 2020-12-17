@@ -1,14 +1,12 @@
 const webpack = require("webpack");
 const path = require("path");
 const globSync = require("glob").sync;
-
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CompressionPlugin = require('compression-webpack-plugin');
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = (env, options) => ({
   entry: ["./src/index.js"],

@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
 @import "fonts";
-
 @import "bootstrap";
 
-@import "navbar";
-@import "home";
-@import "sliders";
-@import "card";
-@import "footer";
+@import "layout/navbar";
+@import "layout/footer";
+
+@import "components/sliders";
+@import "components/card";
+
+@import "pages/home";
+@import "pages/category";
+
 
 .container,
 .container-fluid,
