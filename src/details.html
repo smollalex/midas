@@ -8,7 +8,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     
-  <link href="css/main.7715fd2973f4a8686dff.css" rel="stylesheet"></head>
+  </head>
   <body>
     <header>
       <nav class="navbar navbar-top">
@@ -34,7 +34,7 @@
       <nav class="navbar navbar-middle">
         <div class="container-fluid py-3">
           <a class="navbar-brand" href="#">
-            <img src="images/logo.svg" alt="">
+            <img src="./images/logo.svg" alt="">
             
           </a>
           
@@ -42,7 +42,7 @@
             <div class="input-group">
                 <div class="input-group-prepend">
                   <span class="input-group-text">
-                      <img src="images/search.svg">
+                      <img src="./images/search.svg">
                       
                   </span>
                 </div>
@@ -62,7 +62,7 @@
               >
                 Sign In
               </button>
-              <img src="images/profile.svg" alt="" class="mx-3">
+              <img src="./images/profile.svg" alt="" class="mx-3">
               
             </div>
             <div>
@@ -72,7 +72,7 @@
                 >
                 Cart
                 </button>
-                <img src="images/cart.svg" alt="" class="mx-3">
+                <img src="./images/cart.svg" alt="" class="mx-3">
                 
             </div>
           </div>
@@ -207,239 +207,163 @@
             Magic The Gathering : Singles
           </div>
         </div>
-        <img class="hero-banner" src="images/slider.png"/>
+        <img class="hero-banner" src="../public/slider.png"/>
       </div>
     </section>       
     <section>
-      <div class="container-fluid py-4">
-        <div class="row">
-          <div class="col-3">
-            <aside id="filters" class="filters">
-              <div class="filters-header">
-                <span>Filter By</span>
-                <a href="" class="filter-clear">Clear</a>
-              </div>
-
-              <div class="filter">
-                <div id="filter1">
-                  <button class="" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                    <span class="filter-name">Set names</span>  
-                    <div class="filter-arrow">
-                      <img src="images/minus.svg" alt="" class="filter-plus">
-                      <img src="images/plus.svg" alt="" class="filter-minus">
-                    </div>
-                  </button>
-                </div>
-                <div id="collapse1" class="collapse show" aria-labelledby="filter1" data-parent="#filters">
-                  <div class="filter-items">
-
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Set name
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="filter">
-                <div id="filter2">
-                  <button class="" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                    <span class="filter-name">Set names</span>  
-                    <div class="filter-arrow">
-                      <img src="images/minus.svg" alt="" class="filter-plus">
-                      <img src="images/plus.svg" alt="" class="filter-minus">
-                    </div>
-                  </button>
-                </div>
-                <div id="collapse2" class="collapse show" aria-labelledby="filter2" data-parent="#filters">
-                  <div class="filter-items">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Set name
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div class="container-fluid py-5">
+        <div class="card-details">
+          <div class="row">
+            <div class="col-4 offset-1 d-flex flex-column">
+              <button type="button" class="card-add-to-favorite">
+                <img src="./images/heart.svg">
+              </button>
+              <img src="../public/card-full.jpg" alt="" class="img-fluid ml-auto">
+            </div>
+            <div class="col-6 d-flex flex-column align-items-start  justify-content-between pl-5 pb-3">
               
-            </aside> 
-          </div>
-          <div class="col-9">
-
-            <div class="sorting">
-              <span class="sorting-title">
-                Magic The Gathering
+              <h2 class="card-title">
+                Sephara, Sky’s Blade Modern 2020
+              </h2>
+              <span class="card-price">
+                $5.10
               </span>
-
-              <div class="dropdown">
-                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Sort by:
-                  <span>Newest</span>
+              <span class="card-headline">
+                Condition
+              </span>
+              <div class="dropdown mb-4 ">
+                <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  New Mint
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <hr>
-                  <a class="dropdown-item" href="#">Price: Low to High</a>
-                  <a class="dropdown-item" href="#">Price: High to Low</a>
-                  <a class="dropdown-item" href="#">A-Z</a>
-                  <a class="dropdown-item" href="#">Z-A</a>
-                  <a class="dropdown-item" href="#">Z-A</a>
-                  <a class="dropdown-item" href="#">Newest to Oldest</a>
-                  <a class="dropdown-item" href="#">Best Selling</a>
-                  <a class="dropdown-item" href="#">Featured</a>
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
                 </div>
               </div>
-
-            </div>
-
-            <div class="row">
-              <div class="col-4 mb-4">
-                <div class="card card-base">
-                  <div class="card-header">
-                      <div class="card-actions">
-                        <button type="button" class="add-to-cart">
-                          <img src="images/cart_white.svg">
-                        </button>
-                        <button type="button" class="add-to-favorite">
-                          <img src="images/heart2.svg">
-                        </button>
-                      </div>
-                      <img src="images/card1.svg" alt="">
-                  </div>
-                  <div class="card-body">
-                    <span class="card-set">Core Set 2020</span>
-                    <span class="card-title">Sephara, Sky’s Blade</span>
-                    <div class="card-version">
-                      <span>LP</span>
-                      <span>NM</span>
-                      <span>F</span>
-                    </div>
-                    <div class="d-flex">
-                      <span class="card-price">$5.10</span>
-                      <a href="" class="btn btn-light btn-sm ml-auto">add to cart</a>
-                    </div>
-                  </div>
-                </div>
+              <span class="card-headline">Quantity</span>
+              <div class="card-quantity">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
               </div>
-              <div class="col-4 mb-4">
-                <div class="card card-base">
-                  <div class="card-header">
-                      <div class="card-actions">
-                        <button type="button" class="add-to-cart">
-                          <img src="images/cart_white.svg">
-                        </button>
-                        <button type="button" class="add-to-favorite">
-                          <img src="images/heart2.svg">
-                        </button>
-                      </div>
-                      <img src="images/card1.svg" alt="">
-                  </div>
-                  <div class="card-body">
-                    <span class="card-set">Core Set 2020</span>
-                    <span class="card-title">Sephara, Sky’s Blade</span>
-                    <div class="card-version">
-                      <span>LP</span>
-                      <span>NM</span>
-                      <span>F</span>
-                    </div>
-                    <div class="d-flex">
-                      <span class="card-price">$5.10</span>
-                      <a href="" class="btn btn-light btn-sm ml-auto">add to cart</a>
-                    </div>
-                  </div>
-                </div>
+              <div class="d-flex">
+                <button type="button" class="btn btn-secondary uppercase">
+                  Add to cart
+                </button>
+                <a href="" class="btn btn-link">Review order</a>
               </div>
-              <div class="col-4 mb-4">
-                <div class="card card-base">
-                  <div class="card-header">
-                      <div class="card-actions">
-                        <button type="button" class="add-to-cart">
-                          <img src="images/cart_white.svg">
-                        </button>
-                        <button type="button" class="add-to-favorite">
-                          <img src="images/heart2.svg">
-                        </button>
-                      </div>
-                      <img src="images/card1.svg" alt="">
-                  </div>
-                  <div class="card-body">
-                    <span class="card-set">Core Set 2020</span>
-                    <span class="card-title">Sephara, Sky’s Blade</span>
-                    <div class="card-version">
-                      <span>LP</span>
-                      <span>NM</span>
-                      <span>F</span>
-                    </div>
-                    <div class="d-flex">
-                      <span class="card-price">$5.10</span>
-                      <a href="" class="btn btn-light btn-sm ml-auto">add to cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4 mb-4">
-                <div class="card card-base">
-                  <div class="card-header">
-                      <div class="card-actions">
-                        <button type="button" class="add-to-cart">
-                          <img src="images/cart_white.svg">
-                        </button>
-                        <button type="button" class="add-to-favorite">
-                          <img src="images/heart2.svg">
-                        </button>
-                      </div>
-                      <img src="images/card1.svg" alt="">
-                  </div>
-                  <div class="card-body">
-                    <span class="card-set">Core Set 2020</span>
-                    <span class="card-title">Sephara, Sky’s Blade</span>
-                    <div class="card-version">
-                      <span>LP</span>
-                      <span>NM</span>
-                      <span>F</span>
-                    </div>
-                    <div class="d-flex">
-                      <span class="card-price">$5.10</span>
-                      <a href="" class="btn btn-light btn-sm ml-auto">add to cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4 mb-4">
-                <div class="card card-base">
-                  <div class="card-header">
-                      <div class="card-actions">
-                        <button type="button" class="add-to-cart">
-                          <img src="images/cart_white.svg">
-                        </button>
-                        <button type="button" class="add-to-favorite">
-                          <img src="images/heart2.svg">
-                        </button>
-                      </div>
-                      <img src="images/card1.svg" alt="">
-                  </div>
-                  <div class="card-body">
-                    <span class="card-set">Core Set 2020</span>
-                    <span class="card-title">Sephara, Sky’s Blade</span>
-                    <div class="card-version">
-                      <span>LP</span>
-                      <span>NM</span>
-                      <span>F</span>
-                    </div>
-                    <div class="d-flex">
-                      <span class="card-price">$5.10</span>
-                      <a href="" class="btn btn-light btn-sm ml-auto">add to cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+             </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="trends">
+      <div class="container-fluid">
+          <div class="text-center mb-5">
+              <h2 class="">Customers Also Liked</h2>
+          </div>
+          <div class="tags">
+            <span class="tag tag-1">
+              Modern 2020
+            </span>
+            <span class="tag tag-2">
+              Flying
+            </span>
+            <span class="tag tag-3">
+              Angel
+            </span>
+            <span class="tag tag-1">
+              Modern 2020
+            </span>
+            <span class="tag tag-2">
+              Flying
+            </span>
+            <span class="tag tag-3">
+              Angel
+            </span>
+
+          </div>
+          <div id="trends-slider" class="owl-carousel owl-theme-main owl-theme-trends">
+              <div class="card card-trend">
+                  <div class="card-header">
+                      <button type="button">
+                          <img src="./images/heart.svg">
+                      </button>
+                      <img src="../public/card1.svg" alt="">
+                      
+                  </div>
+                  <div class="card-body">
+                      <span class="category">Magic The Gathering</span>
+                      <span class="mb-3">Archetype of Imagination</span>
+                      <span class="price">$5.10</span>
+                  </div>
+              </div>
+              <div class="card card-trend">
+                  <div class="card-header">
+                      <button type="button" >
+                          <img src="./images/heart.svg">
+                          
+                      </button>
+                      <img src="../public/card2.svg" alt="">
+                      
+                  </div>
+                  <div class="card-body">
+                      <span class="category">Magic The Gathering</span>
+                      <span class="mb-3">Recruiter of the Guard</span>
+                      <span class="price">$5.10</span>
+                  </div>
+              </div>
+              <div class="card card-trend">
+                  <div class="card-header">
+                      <button type="button" >
+                          <img src="./images/heart.svg">
+                          
+                      </button>
+                      <img src="../public/card3.svg" alt="">
+                      
+                  </div>
+                  <div class="card-body">
+                      <span class="category">Magic The Gathering</span>
+                      <span class="mb-3">Memnarch</span>
+                      <span class="price">$5.10</span>
+                  </div>
+              </div>
+              <div class="card card-trend card-trend--liked">
+                  <div class="card-header">
+                      <button type="button" >
+                          <img src="./images/heart2.svg">
+                      </button>
+                      <img src="../public/card4.svg" alt="">
+                      
+                  </div>
+                  <div class="card-body">
+                      <span class="category">Magic The Gathering</span>
+                      <span class="mb-3">Sephara, Sky’s Blade</span>
+                      <span class="price">$5.10</span>
+                  </div>
+              </div>
+              <div class="card card-trend card-trend--liked">
+                  <div class="card-header">
+                      <button type="button" >
+                          <img src="./images/heart2.svg">
+                          
+                      </button>
+                      <img src="../public/card1.svg" alt="">
+                      
+                  </div>
+                  <div class="card-body">
+                      <span class="category">Magic The Gathering</span>
+                      <span class="mb-3">Sephara, Sky’s Blade</span>
+                      <span class="price">$5.10</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
     <section class="subscribe">
       <div class="container-fluid">
           <div class="d-flex align-items-center justify-content-center">
@@ -586,10 +510,10 @@
         <section class="footer-rights">
             Copyright 2020 Win Condition Games, App Right Reserved
             <a class="mt-4" href="#">
-                <img src="images/logo.svg" alt="">
+                <img src="./images/logo.svg" alt="">
                 
               </a>
         </section>
     </footer>
-  <script type="text/javascript" src="main.js"></script></body>
+  </body>
 </html>
