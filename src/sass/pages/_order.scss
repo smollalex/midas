@@ -1,0 +1,150 @@
+.order {
+  &-header {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    color: #474747;
+    border-bottom: 1px solid #979797;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-family: "Gotham Light";
+    margin-right: 100px;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-right: 100px;
+    margin-left: -20px;
+
+    &:nth-child(even) {
+      background-color: #f3f3f366;
+    }
+
+    > div {
+      position: relative;
+      padding: 30px 0 0 0;
+      min-width: 50px;
+
+      &:before {
+        position: absolute;
+        top: 0;
+        font: 14px/14px "Gotham Bold";
+        text-transform: uppercase;
+        color: #474747;
+        opacity: 0.45;
+      }
+    }
+
+    &-detail {
+      display: flex;
+
+      &:before {
+        content: "Product detail";
+      }
+
+      img {
+        margin-right: 15px;
+        max-width: 150px;
+      }
+    }
+    &-quantity {
+      &:before {
+        content: "Quantity";
+      }
+
+      .input-group {
+        width: 105px;
+
+        &-text {
+          padding: 0 10px;
+          background: none;
+          border: none;
+        }
+        .form-control {
+          padding: 0 10px;
+          font: 14px/1.25 "Gotham Bold";
+          color: #474747;
+        }
+      }
+    }
+    &-price {
+      &:before {
+        content: "Price";
+      }
+    }
+    &-total {
+      &:before {
+        content: "Total";
+      }
+    }
+    &-title {
+      font: 14px/1.25 "Gotham Bold";
+      color: #474747;
+      margin: 10px 0 15px 0;
+    }
+    &-subtitle {
+      font: 14px/1.25 "Gotham Bold";
+      color: #474747;
+      margin-bottom: 30px;
+    }
+    &-price,
+    &-total {
+      font: 14px/1.25 "Gotham Bold";
+      color: #474747;
+    }
+
+    &-remove {
+      font: 14px/1.25 "Gotham Bold";
+      color: #474747;
+      opacity: 0.4;
+    }
+  }
+
+  &-summary {
+    background-color: #f3f3f3;
+    height: 100%;
+    padding: 0 30px;
+
+    &-header {
+      padding: 40px 0;
+      display: flex;
+      justify-content: space-between;
+      color: #474747;
+      border-bottom: 1px solid #979797;
+      margin-bottom: 40px;
+      font: 300 24px/1.25 "Gotham Light";
+    }
+    &-subheader {
+      display: flex;
+      justify-content: space-between;
+      font: 14px/1.25 "Gotham Bold";
+      color: #474747;
+      margin-bottom: 50px;
+    }
+    &-total {
+      font: 14px/1.25 "Gotham Bold";
+      color: #474747;
+      color: #474747;
+      margin: 40px 0;
+      border-top: 1px solid #474747;
+      padding-top: 30px;
+      > div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+    }
+
+    .form-group {
+      label {
+        font: 14px/1.25 "Gotham Bold";
+        color: #474747;
+        text-transform: uppercase;
+      }
+      margin-bottom: 50px;
+    }
+  }
+}
